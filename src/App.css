@@ -1,38 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display+SC');
+
 .App {
+  padding: 1em;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+}
+
+header {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* typography */
+h1 {
+  font-family: 'Playfair Display SC';
+  text-align: center;
+  font-size: 64px;
+}
+
+html {
+  font-family: 'helvetica neue', sans-serif;
+}
+
+thead th, tfoot th {
+  font-family: 'Rock Salt';
+}
+
+th {
+  letter-spacing: 2px;
+  padding: 10px;
+}
+
+td {
+  letter-spacing: 1px;
+  overflow-x:hidden;
+  overflow-y:hidden;
+  font-size: 12px;
+  padding: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* table */
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  overflow:hidden;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.content_td p {
+  max-width: 100%;
+  max-height: 100px;
+  overflow-y: auto;
+  text-overflow: ellipsis;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+table tr:nth-child(odd) {
+  background-color: #fff0c7;
 }
 
-.App-link {
-  color: #61dafb;
+
+img {
+  object-fit: scale-down;
+  height: 100%;
+  width: 100%;
+}
+/* Column Size for thead */
+thead tr th:nth-child(n+1):nth-child(-n+3), thead tr th:nth-child(6) {
+  width: 10%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+thead tr th:nth-child(n+4):nth-child(-n+5) {
+  width: 30%;
+}
+
+/* Column size for tbody */
+tbody tr td:nth-child(n+1):nth-child(-n+3), tbody tr ts:nth-child(6) {
+  width: 10%;
+}
+
+tbody tr td:nth-child(n+4):nth-child(-n+5) {
+  width: 30%;
 }
