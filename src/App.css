@@ -79,7 +79,7 @@ thead tr th:nth-child(n+4):nth-child(-n+5) {
 }
 
 /* Column size for tbody */
-tbody tr td:nth-child(n+1):nth-child(-n+3), tbody tr ts:nth-child(6) {
+tbody tr td:nth-child(n+1):nth-child(-n+3), tbody tr td:nth-child(6) {
   width: 10%;
 }
 
