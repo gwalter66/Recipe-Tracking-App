@@ -1,3 +1,6 @@
+This is an app created with react in order to track recipies.  One should be able to add new recipies and delete any recipe showing with the click of a button.  
+This app was created for Thinkful Software Engineering Bootcamp module 27
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
